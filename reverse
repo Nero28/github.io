@@ -1,0 +1,14 @@
+const reverse = (str) => {
+  let rev='';
+let str_end=str.length-1;
+while(str_end>=0){
+   rev=rev+str[str_end];
+   str_end=str_end-1;
+  }
+ return rev;
+
+ }
+
+// END
+
+export default reverse;
