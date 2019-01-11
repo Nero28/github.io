@@ -3,31 +3,20 @@ const isPrime=(num)=>{
   if (num<2){
     return false;
   }
-  else if (num===2){
-    return true;
-}
-
- else if(num>2){
-for(let count=2;count<=num;count++){
-  if(num%count===0 && num!==count){
-  
-   
-     return false;
+else{
+for(let count=2;count<num;count++){
+  if(num%count===0 ){
+  return false;
      }
-continue;
 }
-
-
 return true;
-
-
 }
  }
-    
-
-// END
+    // END
 
 
 export default isPrime;
+
+
 
 
