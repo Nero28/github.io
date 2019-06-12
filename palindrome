@@ -1,0 +1,47 @@
+// BEGIN (write your solution here)
+
+const isPalindrome=(str)=>{
+let newStr='';
+  
+
+   
+   
+console.log('STR',str);
+
+    if(str.length<2){
+      console.log('!!!!!','POLINDROM');
+     return true;
+    }
+  
+let firstChar=0;
+let lastChar=str.length-1;
+console.log(
+  `indexFirst---${firstChar}\n 
+   indexLast---${lastChar}\n
+   FIRST---${str[firstChar]} \n 
+   LAST---${str[lastChar]}`);
+ 
+if(str[firstChar]!=str[lastChar]){
+      return false;
+     }
+
+  
+ //console.log()
+ 
+ if (str[firstChar]==str[lastChar]){
+    firstChar+=1;
+         console.log(`newIndexFirst  ${firstChar}\n
+        NEW_FIRST  ${str[firstChar]}`);
+         
+    lastChar-=1;
+         console.log(`newIndexLast  ${lastChar}\n
+         NEW_LOST  ${str[lastChar]}`);
+      
+  str=str.substring(firstChar,lastChar+1);
+
+        
+return  isPalindrome(str);
+         }
+     }
+export default isPalindrome;
+// END
